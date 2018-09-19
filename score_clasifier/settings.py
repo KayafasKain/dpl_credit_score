@@ -60,6 +60,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'score_clasifier.urls'
 
+WSGI_APPLICATION = 'score_clasifier.wsgi.application'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -84,8 +86,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
-
-WSGI_APPLICATION = 'score_clasifier.wsgi.application'
 
 #mongo settings
 MONGO_SERVER = 'ds123372.mlab.com'
